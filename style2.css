@@ -1,0 +1,161 @@
+body{
+    width: 100%;
+    /* font-family: sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;  */
+    line-height: 1.5;
+    background-color: #000000;;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; }
+  
+li {
+list-style: none; }
+
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none; }
+
+.navbar{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgb(69,69,69)!important;
+    border-bottom: 3px solid #6C7DA7;
+}
+.navbar-brand{
+    padding: 1rem 1rem;
+}
+.navbar-brand img{
+    height: 2rem;
+}
+.nav-item{
+    padding-right: 4rem;
+}
+.nav-link .active {
+    color:#fff;
+}
+
+.header-item img{
+    transform: rotate(-45deg);
+    width: 400px;
+}
+
+.shop{
+    padding-bottom: 5rem;
+}
+.first img{
+    height: 400px; width: 400px; margin-left: -30px;
+}
+.scnd img{
+    height: 400px; width: 550px; margin-left: -100px;
+}
+.thrd img{
+    height: 400px; width: 400px;
+}
+.shop-item a{
+    text-decoration: underline;
+}
+.shop-item a:hover{
+    color:aqua;
+}
+
+.warranty-item{
+    padding: .5rem 0;
+    background-color: #6C7DA7;
+    border-radius: 10px;
+}
+.warranty-item img{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; 
+  }
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+/* for store */
+.card{
+    width: 340px; /* Set a fixed width for the cards */
+    height: 600px; /* Set a fixed height for the cards */
+    color: #6C7DA7;
+    background: rgb(69,69,69)!important;
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow: hidden; /* Hide any overflowing text */
+    margin-right: 10px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover; /* Optional: Maintain the image aspect ratio and cover the container */
+}
+
+
+#whybuy {
+    padding: 10%;
+}
+.flex-row {
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.scroll-left,
+.scroll-right {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-800%);
+}
+
+.scroll-left {
+    left: 0; /* Position on the left edge of the container */
+}
+
+.scroll-right {
+    right: 0; /* Position on the right edge of the container */
+}
+/* for store */

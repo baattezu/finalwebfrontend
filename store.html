@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eec6c286f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/icons/Снимок экрана 2023-10-24 234608 (1).svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cygnus</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                    <a class="navbar-brand " href="/index.html"><img src="img/icons/Снимок экрана 2023-10-24 234608 (1).svg" alt="">Cygnus</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sdiscount.html">Student-Discount</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nexusglide.html">CYGNUS NexusGlide</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./support.html">Support</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"><i class="fa-solid fa-user"></i></a>    
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section>
+            <div class="welcome_store">
+                <h1>Discover the Future with Us: Welcome to Cygnus!</h1>
+            </div>
+        </section>
+        <br><br> 
+        <div id="circle" class="circle"></div>   
+        <div class="container-fluid py-2" id="store">
+            <div class="danger text-center">
+                <h2>FRESH OFF THE LINE</h2>
+                <p>Check out our latest releases to secure the most up-to-date upgrades for your setup</p>
+            </div>
+            <br><br>
+            <div class="flex-row flex-nowrap gy-2" id="row1">
+
+                <div class="card md-2 sm-2" >
+                    <img src="img/items/laptop.png" class="card-img-top zoomable-image" 
+                    alt="Product Image" id="image1" 
+                    onmousemove="zoom(event, 'image1')" onmouseout="resetZoom('image1')">
+                    <div class="card-body">
+                        <h5 class="card-title">Laptop SWAN 15</h5>
+                        <p class="card-header">
+                            NVIDIA® GeForce RTX™ 40 Series 15” Laptop with AMD Ryzen 9 7940HS Processor. For the best performance and quality.</p>
+                        <p class="card-text">$1299.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#laptopMore">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="laptopMore" tabindex="-1" role="dialog" aria-labelledby="laptopMoreTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Laptop</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the revolutionary NVIDIA® GeForce RTX™ 40 Series 15” Laptop, featuring the cutting-edge AMD Ryzen 9 7940HS Processor. This powerhouse of a device is meticulously crafted to deliver unparalleled performance and top-tier quality, redefining the standards of mobile computing.
+
+At the heart of this extraordinary laptop lies the AMD Ryzen 9 7940HS Processor, a marvel of processing power that ensures seamless multitasking, swift responsiveness, and remarkable efficiency. With its advanced architecture, the Ryzen 9 7940HS sets the stage for an unparalleled computing experience, whether you're engaging in intensive gaming sessions, content creation, or demanding professional tasks.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md-2 sm-2"  >
+                    <img src="img/items/headphones3.png" class="card-img-top zoomable-image" 
+                    alt="Product Image" id="image2"
+                    onmousemove="zoom(event, 'image2')" onmouseout="resetZoom('image2')" >
+                    <div class="card-body">
+                        <h5 class="card-title">Headset HS-2 Pink</h5>
+                        <p class="card-header">Back with multiple upgrades and now in the pink.</p>
+                        <p class="card-text">$69.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#headsetMore">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="headsetMore" tabindex="-1" role="dialog" aria-labelledby="headsetMoreTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Headset</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the HS-2 Pink Headset, a stylish and functional accessory that enhances your audio experience. This headset not only delivers superior sound quality but also adds a touch of flair with its eye-catching pink design.
+
+The HS-2 Pink is more than just a headset; it's a statement of individuality. The sleek design and vibrant color make it a standout accessory, perfect for those who appreciate both style and substance.
+
+Immerse yourself in crystal-clear audio with the HS-2 Pink. Whether you're gaming, listening to music, or engaging in virtual meetings, this headset provides an immersive sound experience that elevates your audio enjoyment.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md-2 sm-2" >
+                    <img src="img/items/mic.png" class="card-img-top" 
+                    alt="Product Image" id="image3"
+                    onmousemove="zoom(event, 'image3')" onmouseout="resetZoom('image3')">
+                    <div class="card-body">
+                        <h5 class="card-title">Microphone MCP-1</h5>
+                        <p class="card-header">Perfect for gaming and broadcasting.</p>
+                        <p class="card-text">$99.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#micMore">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="micMore" tabindex="-1" role="dialog" aria-labelledby="micMoreTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Microphone</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the MCP-1 Microphone, a compact yet powerful audio device designed to elevate your recording and communication experience. This microphone is engineered with precision to deliver crystal-clear audio, making it an essential tool for various applications.
+
+The MCP-1 boasts a sleek and minimalist design, complemented by its compact size, making it a versatile and portable solution for anyone on the go. Whether you're a content creator, podcaster, or professional in need of a reliable microphone, the MCP-1 is built to meet your audio needs with style.
+
+Equipped with advanced noise-canceling technology, the MCP-1 ensures that your recordings are free from unwanted background noise, providing a clean and professional sound. This feature makes it an excellent choice for virtual meetings, podcasting, streaming, and other applications where clear communication is crucial.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card md-2 ">
+                    <img src="img/items/keyboard_white.png" class="card-img-top" 
+                    alt="Product Image" id="image4"
+                    onmousemove="zoom(event, 'image4')" onmouseout="resetZoom('image4')">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard KTRL-77 60% White</h5>
+                        <p class="card-header">Best option for tournament.</p>
+                        <p class="card-text">$79.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#keyb_whiteMore">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="keyb_whiteMore" tabindex="-1" role="dialog" aria-labelledby="keyb_whiteMoreTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Keyboard</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                Introducing the KTRL-77 60% White Keyboard, a sleek and compact powerhouse that redefines your typing and gaming experience. 
+                                This cutting-edge keyboard combines style and functionality, delivering a perfect blend of aesthetics and performance.
+                                The KTRL-77's 60% compact design means you get a compact, space-saving layout without sacrificing functionality. 
+                                It's the ideal choice for those who value a minimalist desk setup while still demanding the full range of features from their keyboard.
+                                Immerse yourself in a pristine typing experience with the KTRL-77's white aesthetic. The clean, minimalist design adds a 
+                                touch of sophistication to your workspace, making it the perfect choice for both work and play.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary mt-2" onclick="playKeyboardSound()">Test</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md-2" >
+                    <img src="img/items/chair.png" class="card-img-top" 
+                    alt="Product Image" id="image5"
+                    onmousemove="zoom(event, 'image5')" onmouseout="resetZoom('image5')">
+                    <div class="card-body">
+                        <h5 class="card-title">Chair CR-20</h5>
+                        <p class="card-header">Chair based on top-standards but for cheap price.</p>
+                        <p class="card-text">$109.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#chairMore">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="chairMore" tabindex="-1" role="dialog" aria-labelledby="chairMoreTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Chair</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the CR-20, a revolutionary chair that combines top-notch standards with an affordable price tag, 
+                                    redefining comfort without breaking the bank. Crafted with meticulous attention to detail and ergonomic design, 
+                                    the CR-20 ensures a seating experience that exceeds expectations while remaining accessible to a wide range of budget-conscious consumers.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card md-2" >
+                    <img src="img/items/mouse4.png" class="card-img-top" 
+                    alt="Product Image" id="image6"
+                    onmousemove="zoom(event, 'image6')" onmouseout="resetZoom('image6')">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse WM-45</h5>
+                        <p class="card-header">Wireless, small weight and HOT-SWAP technology. Perfect.</p>
+                        <p class="card-text">$64.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#mousemore45">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="mousemore45" tabindex="-1" role="dialog" aria-labelledby="mousemore45Title" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Mouse</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the WM-45, a cutting-edge wireless mouse that sets a new standard for performance, 
+                                    convenience, and customization. This sleek peripheral is designed for those who demand precision 
+                                    in their work or gaming sessions, offering a lightweight build, seamless wireless connectivity, and the innovative HOT-SWAP technology for unparalleled versatility.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-left soundButton" data-row="row1"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="scroll-right soundButton" data-row="row1"><i class="fa-solid fa-angle-right"></i></button>
+            <br><br><div class="danger text-center">
+                <h2>BEST SELLERS</h2>
+                <p>Join the hype train with the hottest products in our arsenal</p>
+                <br><br>
+            <div class="flex-row flex-nowrap gy-2" id="row2">
+                
+                <div class="card" >
+                    <img src="img/items/keyboard_dark.png" class="card-img-top" 
+                    alt="Product Image" id="image7"
+                    onmousemove="zoom(event, 'image7')" onmouseout="resetZoom('image7')">
+                    <div class="card-body">
+                        <h5 class="card-title">Keyboard KTRL-99 </h5>
+                        <p class="card-header">New mechanical switches and WIRELESS connection</p>
+                        <p class="card-text">$89.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#keyboarddark">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="keyboarddark" tabindex="-1" role="dialog" aria-labelledby="keyboarddarkTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Keyboard</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the KTRL-99, a state-of-the-art mechanical keyboard that combines the latest in switch technology 
+                                    with the freedom of wireless connectivity. Elevate your typing and gaming experience with this premium keyboard, 
+                                    featuring innovative mechanical switches, a wireless connection, and a host of customizable features.
+                                </div>
+                            
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary mt-2" onclick="playKeyboardSound()">Test</button>
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="img/items/headset.png" class="card-img-top" 
+                    alt="Product Image" id="image8"
+                    onmousemove="zoom(event, 'image8')" onmouseout="resetZoom('image8')">
+                    <div class="card-body">
+                        <h5 class="card-title">Headset HS-1 Black</h5>
+                        <p class="card-header">Wireless Multi-platform Gaming and Mobile Headset</p>
+                        <p class="card-text">$59.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#headsetblack">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="headsetblack" tabindex="-1" role="dialog" aria-labelledby="headsetblackTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Headset</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the HS-1 Black, a cutting-edge wireless gaming and mobile headset that transcends boundaries with its
+                                     multi-platform compatibility. Immerse yourself in a world of unparalleled audio performance, comfort, and versatility 
+                                     with this sleek and powerful headset.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="img/items/mouse.png" class="card-img-top" 
+                    alt="Product Image" id="image9"
+                    onmousemove="zoom(event, 'image9')" onmouseout="resetZoom('image9')">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse WM-20</h5>
+                        <p class="card-header">Created on 20 year anniversary. Customizable Wireless Gaming Mouse</p>
+                        <p class="card-text">$60.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#mouseblacks">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="mouseblacks" tabindex="-1" role="dialog" aria-labelledby="mouseblacksTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">WM-20</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    
+                                Introducing the Mouse WM-20: A Celebration of 20 Years of Precision Gaming Excellence
+
+                                Unleash the power of a gaming legacy with the Mouse WM-20, a state-of-the-art wireless gaming mouse designed to 
+                                commemorate two decades of gaming innovation. Meticulously crafted for enthusiasts who demand the best, this customizable 
+                                masterpiece offers a unique blend of cutting-edge technology and ergonomic design, providing an unparalleled gaming experience.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="img/items/webcamera.png" class="card-img-top" 
+                    alt="Product Image" id="image10"
+                    onmousemove="zoom(event, 'image10')" onmouseout="resetZoom('image10')">
+                    <div class="card-body">
+                        <h5 class="card-title">Webcamera WC-1</h5>
+                        <p class="card-header">USB Camera with High-Performance Adaptive Light Sensor</p>
+                        <p class="card-text">$99.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#wcc23">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="wcc23" tabindex="-1" role="dialog" aria-labelledby="wccTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">WC-1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the Webcamera WC-1: Illuminate Your World with Adaptive Clarity
+                                    The Webcamera WC-1 is not just a USB camera; it's a visual revolution. Immerse yourself in crystal-clear video calls, 
+                                    streaming, and content creation with this 
+                                    high-performance webcam featuring an adaptive light sensor. Designed for versatility and ease of use, 
+                                    the WC-1 sets a new standard for webcam technology.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="img/items/gamepad.png" class="card-img-top" 
+                    alt="Product Image" id="image11"
+                    onmousemove="zoom(event, 'image11')" onmouseout="resetZoom('image11')">
+                    <div class="card-body">
+                        <h5 class="card-title">Gamepad GC-1</h5>
+                        <p class="card-header">Wireless Pro Gaming Controller for PS5™ Consoles and PC</p>
+                        <p class="card-text">$69.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#gcc">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="gcc" tabindex="-1" role="dialog" aria-labelledby="gccTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Gamepad GC-1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the Gamepad GC-1: Elevate Your Gaming Experience to New Heights
+                                    Get ready to redefine the way you play with the Gamepad GC-1, a high-performance gaming controller designed 
+                                    for maximum comfort, precision, and versatility. Whether you're a casual gamer or a competitive enthusiast, 
+                                    the GC-1 is crafted to deliver an immersive and responsive gaming experience on a wide range of platforms.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="img/items/mouse6.png" class="card-img-top" 
+                    alt="Product Image" id="image12"
+                    onmousemove="zoom(event, 'image12')" onmouseout="resetZoom('image12')">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse GM-1</h5>
+                        <p class="card-header">Ultra-lightweight Wireless Ergonomic Esports Mouse.</p>
+                        <p class="card-text">$49.99</p>
+                        <button type="button" class="btn btn-dark text-uppercase soundButton" data-toggle="modal" data-target="#m66">
+                            More
+                        </button>
+                          
+                          <!-- Modal -->
+                        <div class="modal fade" id="m66" tabindex="-1" role="dialog" aria-labelledby="m66Title" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Mouse GM-1</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Introducing the Mouse GM-1: Redefining Esports Precision with Ultra-Lightweight Wireless Freedom
+                                    Gear up for the ultimate esports experience with the Mouse GM-1, a revolutionary wireless gaming mouse meticulously 
+                                    crafted for esports enthusiasts and competitive gamers. Combining ultra-lightweight design, wireless convenience, 
+                                    and ergonomic perfection, the GM-1 is your gateway to unparalleled precision and comfort on the virtual battleground.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          
+            </div>
+            
+            <button class="scroll-left soundButton" data-row="row2"><i class="fa-solid fa-angle-left"></i></button>
+            <button class="scroll-right soundButton" data-row="row2"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+        
+        <div class="container-fluid" id="whybuy">
+            <div class="text-center">
+                <h2>WHY BUY FROM CYGNUS.COM</h2>
+            
+                <div class="row">
+                    <div class="col-4">
+                        <h1> <i class="fa-solid fa-bag-shopping"></i>  </h1>
+                        <h2> The Big Array Of Cygnus Gear</h2>
+                        <p> As Cygnus’s official online store, we hold a big collection of products that can’t be matched anywhere else.</p>
+                    </div>
+                    <div class="col-4">
+                        <h1> <i class="fa-solid fa-star"></i>  </h1>
+                        <h2> Exclusive Cygnus Gear And Swag</h2>
+                        <p> Get access to limited edition Cygnus gear that’s only available on Razer.com. </p>
+                    </div>
+                    <div class="col-4">
+                        <h1> <i class="fa-solid fa-certificate"></i>  </h1>
+                        <h2> Quality You Can Trust</h2>
+                        <p> Trust in the quality of our products, built to last and exceed your expectations. </p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        
+        <!-- More product sections go here -->
+    </main>
+
+    
+    
+    <footer class="footer text-center text-white fixed">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-facebook"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-google"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-github"></i
+                ></a>
+            </section>
+            <section>
+                <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                    </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example21" class="form-control" />
+                        <label class="form-label" for="form5Example21">Email address</label>
+                    </div>
+                    </div>
+        
+                    <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                        Subscribe
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </section>
+            <section class="mb-4">
+                <p>
+                    Connect with Us: Follow us on social media for updates and promotions!
+                </p>
+            </section>
+            </div>
+        </footer>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

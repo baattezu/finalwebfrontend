@@ -1,0 +1,258 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/eec6c286f7.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      
+
+    
+    <link rel="shortcut icon" href="img/icons/Снимок экрана 2023-10-24 234608 (1).svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Cygnus</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                    <a class="navbar-brand " href="/index.html"><img src="img/icons/Снимок экрана 2023-10-24 234608 (1).svg" alt="">Cygnus</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./store.html">Store</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./support.html">Student-Discount</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nexusglide.html">CYGNUS NexusGlide</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./support.html">Support</a>    
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./login.html"><i class="fa-solid fa-user"></i></a>    
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+          </nav>
+    </header>
+    <main>
+    <section>
+        <div class="welcome_loginpage">
+            
+            
+            <div class="col-12">
+                <div class="row">
+
+                    <h2><b>My Account</b></h2>
+
+                </div>
+            
+                
+
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#loginform">Login</button>
+                <div class="modal fade" id="loginform" tabindex="-1" role="dialog" aria-labelledby="loginformTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <form class="modal-content animate">
+    
+                                <div class="container">
+                                <h1>Login</h1>
+                                <hr>
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required>
+            
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required>
+            
+                                
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                                </label>
+                                </div>
+            
+                                <div class="container">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+    
+                
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupform">Sign Up</button>
+    
+                <!-- The Modal -->
+                
+                
+                <div class="modal fade" id="signupform" tabindex="-1" role="dialog" aria-labelledby="loginformTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <form class="modal-content animate">
+                                <div class="container">
+                                  <h1>Sign Up</h1>
+                                  <hr>
+                                  <label for="email"><b>Email</b></label>
+                                  <input type="text" placeholder="Enter Email" name="email" required>
+                            
+                                  <label for="psw"><b>Password</b></label>
+                                  <input type="password" placeholder="Enter Password" name="psw" required>
+                            
+                                  <label for="psw-repeat"><b>Repeat Password</b></label>
+                                  <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                            
+                                  <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                  </label>
+                            
+                                  <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                            
+                                  <div class="clearfix">
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                                  </div>
+                                </div>
+                              </form>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            
+                
+            
+        </div>
+        
+       
+        
+    </section>
+    <div class="container-fluid account">
+        <div class="row software">
+            <div class="col-4">
+                <section>
+                    <h1> <b> ACCOUNT </b> </h1> <br>
+                    <h6> Edit your personal information and change your password. </h6>    
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="">PROFILE</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">ADDRESS BOOK</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">PAYMENT OPTIONS</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">PRIVACY + DATA</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="">LOGIN + SECURITY</a>
+                        </li>
+                    </ul>
+                  </section>
+            </div>
+            <div class="col-4">
+              <section>
+                <h1> <b> ORDERS </b> </h1> <br>
+                    <h6> Check the status of your orders, make a return, or view your order history. </h6>   
+                <ul>
+                    <li>
+                        <a class="nav-link" href="">MY ORDERS</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="">ORDER FAQS</a>
+                    </li>
+                    
+                </ul>
+              </section>
+            </div>
+            <div class="col-4">
+                <section>
+                    <h1> <b> JUST FOR YOU </b> </h1> <br>
+                    <h6> Get more information about our top selling products. </h6>       
+                    <ul>
+                        <li>
+                            <a class="nav-link" href="">BEST SELLING PRODUCTS</a>
+                        </li>
+                    </ul>
+                  </section>
+            </div>
+    </div>
+    
+    
+    </main>
+
+    <footer class="footer text-center text-white fixed">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-facebook"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-google"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-instagram"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fa-brands fa-github"></i
+                ></a>
+            </section>
+            <section>
+                <form action="">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-auto">
+                    <p class="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                    </p>
+                    </div>
+                    <div class="col-md-5 col-12">
+                    <div class="form-outline form-white mb-4">
+                        <input type="email" id="form5Example21" class="form-control" />
+                        <label class="form-label" for="form5Example21">Email address</label>
+                    </div>
+                    </div>
+        
+                    <div class="col-auto">
+                    <button type="submit" class="btn btn-outline-light mb-4">
+                        Subscribe
+                    </button>
+                    </div>
+                </div>
+                </form>
+            </section>
+            <section class="mb-4">
+                <p>
+                    Connect with Us: Follow us on social media for updates and promotions!
+                </p>
+            </section>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+        <script src="https://kit.fontawesome.com/5afb6acfa8.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+</body>
+</html>

@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@400;500;600&family=Montserrat:wght@400;500&display=swap');
+
+
+:root {
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
+  }
+
+html{
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    background-color: #000000;
+}
+
+header{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+main{
+    font-family: 'Exo', sans-serif;
+}
+
+h2,h3,h4,p,i{
+    color:#fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; }
+  
+li {
+list-style: none; }
+
+ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+
+textarea {
+    resize: none; }
+
+.navbar{
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgb(69,69,69)!important;
+    border-bottom: 3px solid #6C7DA7;
+}
+.navbar-brand{
+    padding: 1rem 1rem;
+    color:#fff !important;
+    font-size: .9rem;
+}
+.navbar-brand img{
+    height: 2rem;
+}
+.nav-item{
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+.nav-link{
+    color:#fff !important;
+}
+.nav-link:hover{
+    color:#6C7DA7 !important;
+}
+
+header .btn{
+    color:#fff !important;
+}header .btn:hover{
+    color:#6C7DA7 !important;
+}
+.header-item img{
+    transform: rotate(-45deg);
+    width: 400px;
+}
+
+.shop{
+    padding-bottom: 5rem;
+}
+.first img{
+    height: 400px; width: 400px; margin-left: -30px;
+}
+.scnd img{
+    height: 400px; width: 550px; margin-left: -100px;
+}
+.thrd img{
+    height: 400px; width: 400px;
+}
+.shop-item a{
+    text-decoration: underline;
+    transition: margin .2s ease-in-out;
+    line-height: 1.5em;
+}
+
+.shop-item a:hover,
+.shop-item a:focus{
+    text-shadow: 0 0 2px #6C7DA7;
+    margin-left: 0.5em;
+    outline: none;
+    position: relative;
+}
+
+.shop-item a::before{
+    position: absolute;
+    left: -1em;
+    content: ">";
+    color: transparent;
+}
+.warranty-item{
+    padding: .5rem 0;
+    background-color: #6C7DA7;
+    border-radius: 10px;
+}
+.warranty-item img{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; 
+  }
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -.05rem;
+}
+
+#events .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+#events .carousel-item {
+    height: 32rem;
+}
+#events .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/*support*/
+
+.welcome_support{
+    padding-top: 179px;    
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C7DA7;
+    background-image:url(img/bg/supportbg.jpg);
+}
+
+
+
+.welcome_support h1{
+    font-size: 40px;
+    mix-blend-mode:exclusion;
+}
+
+#reviews .reviews-header h2{
+    padding: 20px;
+    
+}
+#reviews .reviews-header hr{
+    margin: 1.5rem 30vw 0 30vw;
+}
+#reviews .reviews-header .border-bottom{
+    margin-top: 20px;
+    width: 1.5rem;
+}
+
+#reviews .carousel-caption {
+    bottom: 2rem;
+    z-index: 10;
+}
+#reviews .carousel-item {
+    height: 10rem;
+}
+#reviews .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+}
+
+/*store*/
+
+.welcome_store{
+    padding-top: 179px;    
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C7DA7;
+    background-image:url(img/bg/desktop.jpg);
+}
+
+.welcome_store h1{
+    font-size: 60px;
+    mix-blend-mode: exclusion;
+    
+}
+.welcome_sdiscount{
+    padding-top: 179px;    
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 75vh;
+    align-content: center;
+    color: #6C7DA7;
+    background-image:url(img/bg/student-gamers.jpg);
+}
+.txt-discount{
+    margin-left: 50%;
+    background-color:black;
+    color: #6C7DA7;
+    padding:1%;
+}
+.signfordiscount{
+    margin: 0.5% 10%;
+    color:#6C7DA7;
+    padding-top: 5%;
+    padding-bottom: 20%;
+}
+.software{
+    color:#6C7DA7;
+    margin: 0.5% 10%;
+}
+.dscntimage{
+    height: 100%;
+    object-fit: cover
+}
+.account{
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+
+.welcome_nexusglide{
+    padding-top: 179px;    
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6C7DA7;
+    background-image:url(img/bg/desktopforsoft.jpg);
+}
+.welcome_loginpage{
+    padding-top: 179px;    
+    padding-bottom: 200px;
+    width: 100vw;
+    height: 75vh;
+    display: flex;
+    text-align: center; 
+    justify-content: center;
+    color: #6C7DA7;
+    background-image:url(img/bg/gear.jpg);
+}
+
+
+
+
+
+
+.card{
+    width: 340px; /* Set a fixed width for the cards */
+    height: 600px; /* Set a fixed height for the cards */
+    color: #6C7DA7;
+    background: rgb(69,69,69)!important;
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow: hidden; /* Hide any overflowing text */
+    margin-right: 10px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover; /* Optional: Maintain the image aspect ratio and cover the container */
+}
+
+
+
+#whybuy {
+    padding: 10%;
+}
+.flex-row {
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*
+.card{
+    color: #6C7DA7;
+    background: rgb(69,69,69)!important;
+}*/
+
+.card{
+    width: 340px; /* Set a fixed width for the cards */
+    height: 600px; /* Set a fixed height for the cards */
+    color: #6C7DA7;
+    background: rgb(69,69,69)!important;
+    white-space: normal; /* Allow text to wrap to the next line */
+    overflow: hidden; /* Hide any overflowing text */
+    margin-right: 10px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+.card-header{
+    height: 7rem;
+    background-color: rgb(69, 69, 69);
+    border-bottom: none;
+}
+
+.card-body a{
+    text-decoration: none;
+    transition: margin .2s ease-in-out;
+    line-height: 1.5em;
+}
+
+.card-body a:hover,
+.card-body a:focus{
+    text-shadow: 0 0 2px #6C7DA7;
+    margin-left: 0.5em;
+    outline: none;
+    position: relative;
+}
+
+.card-body a::before{
+    position: absolute;
+    left: -1em;
+    content: ">";
+    color: transparent;
+}
+
+#reviews{
+    height: 25%;
+    margin-bottom: 2rem;
+}
+
+
+.scroll-left,
+.scroll-right {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+    position: absolute;
+    transform: translateY(-800%);
+}
+
+.scroll-left {
+    left: 0; /* Position on the left edge of the container */
+}
+
+.scroll-right {
+    right: 0; /* Position on the right edge of the container */
+}
+
+/*footer*/
+
+.footer{
+    background: rgb(67, 67, 67)!important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.font1-heading {
+    font-family: 'Bebas Neue', sans-serif !important;
+    size: 10em;
+}
+.font2-body {
+    font-family: 'Exo', sans-serif !important;
+    size: 10em;
+}
+.font3-heading {
+    font-family: 'Montserrat', sans-serif !important;
+    size: 10em;
+}
+
+
+/* mouseover image zooming */
+
+.zoomable-image {
+    transform-origin: 0 0; /* Устанавливаем точку трансформации в верхний левый угол */
+    transition: transform 0.3s ease; /* Анимация при изменении масштаба */
+  }
+  
+  .zoomed {
+    transform: scale(1.5); /* Увеличение масштаба */
+  }
+
+
+
+/* For login page */
+
+  
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+  }
+  
+  @keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+  }
+
+
+  
+  /* Full-width inputs */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  /* Extra style for the cancel button (red) */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the avatar image inside this container */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+  
+  /* Avatar image */
+  img.avatar {
+    width: 40%;
+    border-radius: 50%;
+  }
+  
+  
+  /* The "Forgot password" text */
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+
+  .opening-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    z-index: 9999; /* Set a high z-index to ensure it's on top */
+    animation: fadeInAndOut 2s forwards;
+  }
+  
+  .message-container {
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards, moveUp 1s forwards 1s;
+  }
+  
+  .ianim {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #6200ff; /* Adjust color as needed */
+    animation: spin 3s infinite linear;
+  }
+  
+  .h1anim {
+    margin: 0;
+    font-size: 28px;
+    animation: fadeIn 1s forwards 1s;
+  }
+
+  .content {
+    display: none;
+  }
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes moveUp {
+    from {
+      transform: translateY(20px);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInAndOut {
+    0% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
