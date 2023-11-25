@@ -53,7 +53,7 @@ function zoom(event, imageId) {
 
 function playKeyboardSound() {
     // Assuming you have an audio file named "typing-sound.mp3"
-    var audio = new Audio('/audio/typing-sound.mp3');
+    var audio = new Audio('audio/typing-sound.mp3');
     audio.play();
 }
 
